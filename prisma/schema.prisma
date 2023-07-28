@@ -1,0 +1,43 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Family {
+  id              Int    @id @default(autoincrement())
+  headOfTheFamily String
+  unicCad         String
+  latitude        Float
+  longitude       Float
+}
+
+model User {
+  id       Int     @id @default(autoincrement())
+  name     String
+  email    String  @unique
+  password String
+  offline  Boolean
+}
+
+model Login {
+  id       Int     @id @default(autoincrement())
+  email    String  @unique @default("")
+  isLogged Boolean @default(false)
+}
+
+model Gamefication {
+  id   Int @id @default(autoincrement())
+  docs Int
+}
+
+model MaxDocs {
+  id      Int @id @default(autoincrement())
+  maxDocs Int
+}
