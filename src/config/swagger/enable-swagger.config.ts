@@ -4,8 +4,7 @@ import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 export const enableSwaggerConfig = (app: INestApplication) => {
   const options = new DocumentBuilder()
     .addBearerAuth()
-    .setTitle('Questrade')
-    .setDescription('App voltado a emprestimos')
+    .setTitle('IdeiaGov')
     .setVersion('1.0.0')
     .build();
 
