@@ -77,7 +77,7 @@ Esses casos de uso e práticas de segurança demonstram o compromisso da nossa A
 # External Packages (Backend)
 
 - NestJs
-- Nodemailer
+- Jest
 - Prisma
 
 # Arquitetura usada (Backend)
