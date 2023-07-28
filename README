@@ -1,0 +1,98 @@
+# Ideia GOV
+
+Desenvolvemos uma API inovadora voltada para o mapeamento de áreas de risco, que incorpora um emocionante sistema de gamificação. Nesse sistema, os assistentes encarregados de mapear as áreas de risco têm metas desafiadoras a cumprir durante um período de 30 dias. Por exemplo, uma meta pode ser estabelecida pelo superior.
+Essa abordagem incentiva e motiva os profissionais a atingirem resultados excepcionais na identificação e análise dessas regiões, criando uma competição saudável e estimulante para melhorar continuamente a qualidade dos dados coletados.
+Além disso, nossa API oferece um sistema simples e eficiente para o registro de novos moradores dessas áreas. Com uma interface amigável e intuitiva, os assistentes podem facilmente cadastrar informações relevantes sobre os residentes, garantindo uma base de dados completa e atualizada.
+Para garantir a confiabilidade e o acesso contínuo aos dados, nossa API conta com um sistema offline robusto. Mesmo em locais com conectividade limitada, os assistentes podem continuar coletando informações e atualizando o banco de dados localmente. Assim que a conexão for restabelecida, todos os dados são sincronizados de forma automática e segura, proporcionando um fluxo de trabalho contínuo e sem interrupções.
+Priorizamos a segurança e a conformidade com as normas governamentais em cada etapa do processo de desenvolvimento da nossa API, garantindo que todas as informações coletadas sejam tratadas com o máximo de sigilo e respeito à privacidade dos cidadãos.
+Nossa missão é oferecer uma solução completa e eficiente para o mapeamento de áreas de risco, contribuindo para a proteção das comunidades e o planejamento estratégico das autoridades públicas. Acreditamos que, por meio da combinação entre tecnologia avançada, gamificação e facilidade de uso, nossa API representa um importante avanço na gestão de áreas sensíveis e na promoção do bem-estar social.
+
+### Como instalar a parte do Back
+
+Certifique-se de ter o Node.js instalado em sua máquina.
+
+Instalar o projeto.
+
+```
+npm install
+```
+
+Iniciar o projeto:
+
+```
+nest start
+localhost:3000/api
+```
+
+Teste na AWS:
+
+```
+http://18.220.45.222:3000/api
+```
+
+# Casos de uso
+
+### Caso de Uso 1: Mapeamento de Áreas de Risco
+
+- O usuário acessa a API e define a região que deseja mapear, especificando os critérios de risco que devem ser considerados.
+
+- A API coleta dados relevantes de fontes governamentais e outras fontes confiáveis para analisar as características da região em questão.
+
+- Os dados coletados são submetidos a um tratamento especializado, que elimina informações sensíveis e reduz riscos de identificação dos moradores.
+
+- Com base nas informações tratadas, a API identifica e mapeia as áreas de risco na região especificada, gerando um relatório detalhado com os resultados.
+
+- Os assistentes responsáveis por realizar o mapeamento podem acompanhar o progresso em relação à meta do mês, incentivando uma maior dedicação na conclusão das tarefas.
+
+### Caso de Uso 2: Registro Simplificado de Moradores em Áreas de Risco
+
+- Os assistentes encarregados de registrar os moradores em áreas de risco acessam a interface amigável da API.
+
+- Através de um formulário intuitivo, os assistentes inserem as informações básicas dos moradores, sem a necessidade de detalhes sensíveis que possam comprometer a privacidade.
+
+- A API, em tempo real, registra as informações e as armazena de forma segura no banco de dados, protegendo o sigilo dos moradores.
+
+- Caso a conexão com a internet seja perdida durante o processo de registro, o sistema offline entra em ação, permitindo que os assistentes continuem coletando dados sem interrupções.
+
+- Quando a conexão é restabelecida, os dados são sincronizados automaticamente com o banco de dados principal, assegurando a integridade das informações coletadas.
+
+### Segurança e Privacidade dos Dados
+
+- Todos os documentos e informações adicionados à API passam por rigorosos processos de tratamento e anonimização, garantindo que nenhum dado sensível seja exposto ou comprometido.
+
+- A identidade dos moradores é preservada em absoluto sigilo, sendo acessível apenas para as autoridades competentes em situações específicas de emergência.
+
+- Medidas de segurança avançadas são implementadas para proteger a API contra tentativas de acesso não autorizado e garantir a integridade dos dados.
+
+- A equipe responsável pelo desenvolvimento e manutenção da API é treinada em questões de segurança e privacidade de dados, garantindo que todas as práticas adotadas estejam em conformidade com as regulamentações governamentais e padrões de proteção de informações sensíveis.
+
+Esses casos de uso e práticas de segurança demonstram o compromisso da nossa API em fornecer um serviço confiável, eficiente e, acima de tudo, seguro para o mapeamento de áreas de risco e o registro de moradores, contribuindo significativamente para a proteção e bem-estar das comunidades.
+
+# Design Patterns (Backend)
+
+- Decorators
+- Singleton
+- Factory
+
+# External Packages (Backend)
+
+- NestJs
+- Nodemailer
+- Prisma
+
+# Arquitetura usada (Backend)
+
+- Hexagonal Architecture
+- Modular
+
+## Futuro
+
+No futuro, pretendemos aprimorar ainda mais nossa API, incorporando a Inteligência Artificial (IA) para tornar o processo de upload de documentos mais fácil e eficiente. Com a IA, poderemos automatizar a classificação e o processamento de documentos, reduzindo significativamente o esforço manual e o tempo necessário para essa tarefa.
+Além disso, nossa visão é otimizar todo o sistema atual de registro de moradores em áreas de risco. Através da IA, poderemos oferecer uma experiência mais intuitiva e simplificada para os assistentes encarregados do registro. A IA poderá auxiliar na identificação de campos relevantes nos formulários, preenchendo informações automaticamente ou sugerindo dados com base em padrões já existentes.
+Dessa forma, a API será capaz de oferecer aos usuários uma funcionalidade mais inteligente e prestativa, proporcionando maior precisão e confiabilidade nos registros realizados. Além disso, com o auxílio da IA, poderemos implementar recursos de verificação de consistência dos dados, o que contribuirá para garantir que todas as informações coletadas estejam corretas e atualizadas.
+A segurança e o sigilo dos dados continuarão sendo prioridades essenciais no desenvolvimento futuro da API. Implementaremos medidas adicionais para proteger os dados sensíveis e garantir a privacidade dos moradores, em conformidade com as regulamentações governamentais aplicáveis.
+Nosso objetivo é tornar a API ainda mais poderosa e fácil de usar, aprimorando o mapeamento de áreas de risco e contribuindo para uma gestão mais eficaz e segura dessas regiões. Com a combinação da IA e nossa abordagem centrada no usuário, esperamos proporcionar uma experiência mais ágil e completa para todos os envolvidos no processo de mapeamento e registro.
+
+
+
+

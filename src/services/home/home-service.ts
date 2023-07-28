@@ -16,8 +16,15 @@ export class HomeService extends BaseService {
     try {
       const allDocs = await this.repository.getAllDocuments();
       const actualDocs = await this.repository.getAllDocsGlobal();
+      const porcent = actualDocs.docs / 1000;
+      let porcentFixed = porcent.toFixed(2);
       return {
-        res: { meta: allDocs, actual: actualDocs, time: '30 dias' },
+        res: {
+          meta: allDocs,
+          actual: actualDocs,
+          time: '30 dias',
+          porcent: parseFloat(porcentFixed),
+        },
         status: 200,
       };
     } catch (e) {
