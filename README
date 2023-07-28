@@ -27,7 +27,7 @@ localhost:3000/api
 Teste na AWS:
 
 ```
-http://18.220.45.222:3000/api
+http://3.18.103.104:3000/api
 ```
 
 # Casos de uso
