@@ -93,6 +93,6 @@ Dessa forma, a API será capaz de oferecer aos usuários uma funcionalidade mais
 A segurança e o sigilo dos dados continuarão sendo prioridades essenciais no desenvolvimento futuro da API. Implementaremos medidas adicionais para proteger os dados sensíveis e garantir a privacidade dos moradores, em conformidade com as regulamentações governamentais aplicáveis.
 Nosso objetivo é tornar a API ainda mais poderosa e fácil de usar, aprimorando o mapeamento de áreas de risco e contribuindo para uma gestão mais eficaz e segura dessas regiões. Com a combinação da IA e nossa abordagem centrada no usuário, esperamos proporcionar uma experiência mais ágil e completa para todos os envolvidos no processo de mapeamento e registro.
 
+## Testes
 
-
-
+Nossa API é robusta e inclui testes unitários para garantir sua confiabilidade e desempenho. Os testes unitários são uma parte essencial do nosso processo de desenvolvimento, pois nos permitem verificar individualmente cada componente da aplicação. Isso nos ajuda a identificar e corrigir problemas em um estágio inicial, garantindo que nossa API funcione conforme o esperado em diferentes cenários.
